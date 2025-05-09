@@ -1,6 +1,6 @@
-# apostolicchineseministries.com
+# [v0](./v0)
 
-# 2025-05-09 v0.dev
+## 2025-05-09
 
 My prompt:
 
