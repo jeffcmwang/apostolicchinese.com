@@ -32,9 +32,35 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
         }
 
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+        }
+
+        .header-logo {
+            height: 3rem;
+            width: 3rem;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
+            line-height: 1.1;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            .header-logo {
+                height: 2rem;
+                width: 2rem;
+            }
         }
 
         /* Main content */
@@ -108,7 +134,10 @@
 <body>
     <header>
         <div class="container">
-            <h1>Apostolic Chinese Ministries</h1>
+            <div class="header-content">
+                <img src="ACM-image.png" alt="ACM Logo" class="header-logo" />
+                <h1>Apostolic Chinese Ministries</h1>
+            </div>
         </div>
     </header>
 
