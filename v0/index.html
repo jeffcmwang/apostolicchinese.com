@@ -36,30 +36,64 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 1.2rem;
+            gap: 1rem;
         }
 
         .header-logo {
-            height: 3rem;
-            width: 3rem;
+            height: 6rem;
+            width: 6rem;
             object-fit: contain;
             flex-shrink: 0;
+            background: #fff;
+            border-radius: 1rem;
+            /* Optional: mimic the sketchy border in your image */
+            border: 2px solid #cddc39;
         }
 
-        header h1 {
-            margin: 0;
+        .header-titles {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 0.1rem;
+        }
+
+        .header-chinese {
             font-size: 2.2rem;
-            line-height: 1.1;
+            font-family: 'Noto Sans SC', 'Microsoft YaHei', 'Arial', sans-serif;
+            color: #f1f1f1;
+            margin: 0;
+        }
+
+        .header-english {
+            font-size: 2rem;
+            font-family: 'Noto Sans SC', 'Microsoft YaHei', 'Arial', sans-serif;
+            color: #cddc39;
+            margin: 0;
         }
 
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.2rem;
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
             }
 
             .header-logo {
-                height: 2rem;
-                width: 2rem;
+                height: 3rem;
+                width: 3rem;
+            }
+
+            .header-titles {
+                align-items: center;
+            }
+
+            .header-chinese {
+                font-size: 1.2rem;
+            }
+
+            .header-english {
+                font-size: 1rem;
             }
         }
 
@@ -136,7 +170,10 @@
         <div class="container">
             <div class="header-content">
                 <img src="ACM-image.png" alt="ACM Logo" class="header-logo" />
-                <h1>Apostolic Chinese Ministries</h1>
+                <div class="header-titles">
+                    <div class="header-chinese">华人使徒事工</div>
+                    <div class="header-english">Apostolic Chinese Ministries</div>
+                </div>
             </div>
         </div>
     </header>
