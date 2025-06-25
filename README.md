@@ -11,7 +11,7 @@ My prompt:
 Need to:
 
 - add a link to the main YouTube page
-- link to each YouTube playlist as a course
+- DONE - link to each YouTube playlist as a course
 - make each item Chinese with English subtitiles similar to the top part
 - update the logo
 
@@ -20,3 +20,7 @@ Need to:
 Get embed from https://www.youtube.com/playlist?list=PLT9WHwcLoiUHgzV4_E5RUVHJGtfNSnV6r
 
 prompts in ./github/prompts
+
+Create with `> Chat: New Prompt file`
+
+Run by clicking copilot, switching to agent, `/filename`
