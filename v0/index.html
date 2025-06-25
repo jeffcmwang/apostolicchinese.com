@@ -149,6 +149,30 @@
             margin: 0;
         }
 
+        .all-courses-link {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .all-courses-link a {
+            color: #cddc39;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid #cddc39;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .all-courses-link a:hover {
+            background-color: #cddc39;
+            color: #181a20;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(205, 220, 57, 0.3);
+        }
+
         .courses-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -300,9 +324,14 @@
                 <div class="courses-subtitle">Courses</div>
             </div>
 
+            <div class="all-courses-link">
+                <a href="https://www.youtube.com/@apostolicchinese4531/playlists" target="_blank">所有课程 All Courses
+                </a>
+            </div>
+
             <div class="courses-grid">
                 <div class="course-item">
-                    <h3 class="course-title">Placeholder title</h3>
+                    <h3 class="course-title">使徒行传 The Acts of the Apostles</h3>
                     <div class="course-video">
                         <iframe
                             src="https://www.youtube.com/embed/videoseries?si=96xU2QjHec8MFk17&amp;controls=0&amp;list=PLT9WHwcLoiUHgzV4_E5RUVHJGtfNSnV6r"
@@ -314,7 +343,7 @@
                 </div>
 
                 <div class="course-item">
-                    <h3 class="course-title">Placeholder title</h3>
+                    <h3 class="course-title">综观福音 Survey on the Four Gospels</h3>
                     <div class="course-video">
                         <iframe
                             src="https://www.youtube.com/embed/videoseries?si=IbN-aL_w9MV-tgyK&amp;controls=0&amp;list=PLT9WHwcLoiUFIRaPcLK8fLTMjwaPhA9Lw"
@@ -326,7 +355,7 @@
                 </div>
 
                 <div class="course-item">
-                    <h3 class="course-title">Placeholder title</h3>
+                    <h3 class="course-title">天父的家(门徒训练课程) Discipleship</h3>
                     <div class="course-video">
                         <iframe
                             src="https://www.youtube.com/embed/videoseries?si=M8dr12JdOp7LEyhk&amp;controls=0&amp;list=PLT9WHwcLoiUG6ySwmi888k0Y40OgjMhUJ"
@@ -338,7 +367,7 @@
                 </div>
 
                 <div class="course-item">
-                    <h3 class="course-title">Placeholder title</h3>
+                    <h3 class="course-title">生命之光(圣经基础课程) Basic Bible Study</h3>
                     <div class="course-video">
                         <iframe
                             src="https://www.youtube.com/embed/videoseries?si=gGb9k2SGwaLHuHK2&amp;controls=0&amp;list=PLT9WHwcLoiUGbKixG5sVCyVO1FNwc7z50"
@@ -356,7 +385,6 @@
         <div class="container">
             <ul class="nav-list">
                 <li><a href="#courses">Courses</a></li>
-                <li><a href="#about">About</a></li>
             </ul>
         </div>
     </nav>
