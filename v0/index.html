@@ -243,6 +243,65 @@
             }
         }
 
+        /* About Section */
+        .about-section {
+            background-color: #23272f;
+            padding: 3rem 0;
+            margin-top: 2rem;
+            border-top: 3px solid #cddc39;
+        }
+
+        .about-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .about-title h2 {
+            font-size: 2.5rem;
+            color: #f1f1f1;
+            margin: 0 0 0.5rem 0;
+            font-family: 'Noto Sans SC', 'Microsoft YaHei', 'Arial', sans-serif;
+        }
+
+        .about-subtitle {
+            font-size: 2rem;
+            color: #cddc39;
+            margin: 0;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            color: #f1f1f1;
+        }
+
+        /* Mobile responsive adjustments for About section */
+        @media (max-width: 768px) {
+            .about-section {
+                padding: 2rem 0;
+            }
+
+            .about-title h2 {
+                font-size: 2rem;
+            }
+
+            .about-subtitle {
+                font-size: 1.5rem;
+            }
+
+            .about-content p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+
         /* Navigation Bar Styles */
         .main-nav {
             background-color: #23272f;
@@ -381,13 +440,20 @@
         </div>
     </section>
 
-    <nav class="main-nav">
+    <!-- About Section -->
+    <section id="about" class="about-section">
         <div class="container">
-            <ul class="nav-list">
-                <li><a href="#courses">Courses</a></li>
-            </ul>
+            <div class="about-title">
+                <h2>关于我们</h2>
+                <div class="about-subtitle">About Us</div>
+            </div>
+            
+            <div class="about-content">
+                <p>华人使徒事工致力于传播神的话语，帮助华人信徒在信仰中成长。我们提供系统的圣经教学课程，包括门徒训练、基础圣经学习等。</p>
+                <p>Apostolic Chinese Ministries is dedicated to spreading God's word and helping Chinese believers grow in their faith. We offer systematic biblical teaching courses, including discipleship training and foundational Bible studies.</p>
+            </div>
         </div>
-    </nav>
+    </section>
 </body>
 
 </html>
